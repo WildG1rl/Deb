@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+    h3{
+      float: right;
+      font-family: "Segoe UI",Arial,sans-serif;
+      font-size: 15px;
+      letter-spacing: 4px;
+      line-height: 2;
+      font-weight: 400;
+      position: relative;
+    }
+    li{
+      font-family: "Segoe UI",Arial,sans-serif;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 2;
+      font-weight: 500;
+    }
+    header{
+      margin-top: 25px;
+      margin-left: 10px;
+    }
+    .Navegador-superior{
+      background-color: #4CAF50;
+      width:100vw;
+      height: 60px;
+      color: #fff;
+      box-shadow: 0px 1px 20px 1px #ccc;
+    }
+    .Navegador-superior li:hover{
+      background-color: #fff;
+    }
+    .Navegador-superior li:hover a{
+      background-color: #fff;
+      color: black;
+      cursor: pointer;
+    }
+
+    .Navegador-superior ul li{
+      list-style: none;
+      text-decoration: none;
+      float: left;
+      padding: 15px;
+      padding-right: 50px;
+      text-align: left;
+      padding-left: 15px;
+
+    }
+    .navegador-lateral{
+      display: inline;
+      float: left;
+      position: relative;
+      width: 230px;
+      height: 100vh;
+      text-align: left;
+      box-shadow: 0.1px 10px 10px #ccc;
+      z-index: -10;
+    }
+    .navegador-lateral ul li li{
+      text-align: left;
+
+
+    }
+    .navegador-lateral > ul> li{
+      margin-top: 20px;
+    }
+
+    .navegador-lateral ul ul li:hover{
+
+      background-color: #ddd;
+    }
+    .navegador-lateral a{
+      list-style: none;
+      text-decoration: none;
+      color: black;
+      padding: 1px;
+      margin: 10px;
+      margin-left: 15px;
+
+    }
+
+    .navegador-lateral li{
+      padding: -20px;
+    }
+    .Navegador-superior a{
+      text-decoration: none;
+      color: #fff;
+
+    }
+
+    .Navegador-superior ul ul li{
+
+      position: absolute;
+    }
+    .dropdown-button{
+    display: block;
+    text-decoration: none;
+    color: black;
+    float:left;
+    cursor: pointer;
+    }
+    .dropdown{
+      float: left;
+    }
+
+    .dropdown-content{
+      position: fixed;
+      background-color: #ddd ;
+
+      overflow: hidden;
+    }
+
+    .dropdown:hover  .dropdown-content{
+      position: absolute;
+      overflow: visible;
+      height: 300px;
+      width: 145px;
+      margin-top: 30px;
+
+    }
+
+
+
+    .dropdown-content > ul{
+        list-style: none;
+    }
+
+    .dropdown-content > ul > li > a{
+
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+  </style>
+  <body>
+    <header>
+      <img src="logo.png" alt="" width="300vw">
+      <h3>THE WORLD'S LARGEST WEB DEVELOPER SITE </h3>
+    </header>
+    <nav class="Navegador-superior">
+      <ul>
+        <li> <div class="dropdown">
+
+        <div class="dropdown-button">
+          <a href="#">TUTORIALS</a>
+
+        </div>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="#">Exemplo 1</a></li>
+            <li><a href="#">Exemplo 2</a></li>
+            <li><a href="#">Exemplo 3</a></li>
+            <li><a href="#">Exemplo 4</a></li>
+          </ul>
+        </div>
+        </div></li>
+        <li><a href="#">REFERENCES</a></li>
+        <li><a href="#">EXAMPLES</a></li>
+      </ul>
+    </nav>
+    <nav class="navegador-lateral">
+      <ul>
+        <li><a href="#">HTML and CSS</a>
+        <ul>
+          <li><a href="#">Learn HTML</a></li>
+          <li><a href="#">Learn CSS</a></li>
+          <li><a href="#">Learn w3.CSS</a></li>
+          <li><a href="#">Learn Colors</a></li>
+          <li><a href="#">Learn Bootstrap</a></li>
+        </ul></li>
+        <li><a href="#">JavaScript</a>
+        <ul>
+          <li><a href="#">Learn javaScript</a></li>
+          <li><a href="#">Learn JQuery</a></li>
+          <li><a href="#">Learn AngularJS</a></li>
+          <li><a href="#">Learn JSON</a></li>
+          <li><a href="#">Learn AJAX</a></li>
+        </ul></li>
+        <li><a href="#">Server Side</a>
+        <ul>
+          <li><a href="#">Learn SQL</a></li>
+          <li><a href="#">Learn PHP</a></li>
+          <li><a href="#">Learn ASP</a></li>
+          <li><a href="#">Learn Node.JS</a></li>
+        </ul></li>
+      </ul>
+    </nav>
+
+
+  </body>
+</html>
