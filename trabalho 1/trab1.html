@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Steven Universo</title>
+  </head>
+  <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    body{
+      background-color: pink;
+    }
+    .nav-superior{
+      width: 100vw;
+      height: 50px;
+      background-color: #e04c4c;
+      margin: auto;
+      box-shadow: -2px 3px 6px 4px purple;
+    }
+    .nav-superior > ul {
+      margin-left: 225px;
+    }
+    .nav-superior ul li{
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      background-color: #dbae0d;
+      padding: 10px 10px 10px 10px;
+      list-style: none;
+    }
+
+    .drop-conteudo ul li {
+      padding: 10px 10px 10px 0px;
+      margin-left: -10px;
+      width: 110px;
+      height: 0%;
+      display:none;
+      list-style: none;
+    }
+    .drop-conteudo a{
+      margin-left: 10px;
+    }
+    .drop-conteudo ul {
+
+      margin-top: 22px;
+    }
+    .drop-conteudo ul li{
+
+      background-color: #a642c4;
+    }
+    .nav-superior ul li:hover, .drop-conteudo ul li:hover{
+
+      background-color: #dbae0d;
+    }
+    .nav-superior ul li:hover .drop-conteudo ul li{
+      display: block;
+      height: 100%;
+
+    }
+    ul{
+      position: absolute;
+      background-color: #e04c4c;
+
+      }
+    li:hover{
+      cursor: pointer;
+    }
+    .cabeçalho{
+      width: 900px;
+      height:270px;
+      background-color: pink;
+      margin: auto;
+
+    }
+    .conteudo{
+      width: 900px;
+      margin-left: 225px;
+      height: 700px;
+      background-color: #fff;
+    }
+    .imagem img{
+      width: 100%;
+      height: 250px;;
+    }
+    .menu-lateral{
+      width: 225px;
+      height: 700px;
+      position: absolute;
+      background: linear-gradient(to top, #e04c4c, purple);
+      box-shadow: 2px 7px 6px 1px purple;
+    }
+    .barra-lateral{
+      width: 224px;
+      height: 700px;
+      background-color: purple;
+      float: right;
+      background: linear-gradient(to bottom, #e04c4c, purple);
+      box-shadow: 1px 7px 6px 3px purple;
+      padding: 10px;
+
+    }
+
+    .menu-lateral ul{
+      background-color: transparent;
+    }
+    .conteudo .animacao img{
+      width: 150px;
+      height: 150px;
+
+    }
+    .animacao img{
+      animation-name: rodar;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .animacao{
+      animation: mover 5s linear infinite;
+      z-index: -9;
+    }
+
+    @keyframes rodar {
+
+      from{
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes mover {
+        0%{
+            transform: translate(0vw,0vh);
+        }
+        25%{
+            transform: translate(55vw,0vh);
+        }
+        50%{
+            transform: translate(55vw,90vh);
+        }
+        75%{
+            transform: translate(0vw,90vh);
+        }
+        100%{
+            transform: translate(0vw,0vh);
+        }
+      }
+  </style>
+  <body>
+    <div class="cabeçalho">
+      <div class="imagem">
+
+      <img src="steven.png" alt="">
+    </div>
+  </div><div class="ns">
+
+
+    <nav class="nav-superior">
+      <ul>
+        <li>
+          <a href="#">Personagens</a>
+          <div class="drop-conteudo">
+            <ul>
+              <li><a href="#">Steven</a></li>
+              <li><a href="#">Crystal Gems</a></li>
+              <li><a href="#">Beach City</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Ronaldo's Blog</a>
+          <div class="drop-conteudo">
+            <ul>
+              <li><a href="#">Músicas</a></li>
+              <li><a href="#">Danças/Fusão</a></li>
+              <li><a href="#">Mistérios</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Fusões</a>
+          <div class="drop-conteudo">
+            <ul>
+              <li><a href="#">Alexandrite</a></li>
+              <li><a href="#">Malaquita</a></li>
+              <li><a href="#">Stevonnie</a></li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+
+    </nav>
+    </div>
+    <div class="menu-lateral">
+      <ul>
+        <li>bla bla bla</li>
+        <li>bla bla bla</li>
+      </ul>
+    </div>
+    <aside class="barra-lateral">
+      <h3>Temporada 5 </h3>
+      <p>A temporada 5 traz uma grande reviravolta no roteiro e está sendo ansiosamente aguardada pelos Fãs.
+      Logo no começo, as diamantes amarelo e azul se encontram para investigar a morte da diamante cor de rosa</p>
+      <br>
+      <br>
+      <h4>Qual sua fusão preferida?</h4>
+      <p>Que fusões ainda vêm por aí? </p>
+    </aside>
+    <div class="conteudo">
+      <div class="animacao">
+        <img src="shield.png" alt="" >;
+      </div>
+    </div>
+
+  </body>
+</html>
