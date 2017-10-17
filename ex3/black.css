@@ -1,0 +1,67 @@
+<style media="screen">
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+  body{
+    background-image: url("bckg.png");
+    background-repeat: repeat-3;
+  }
+
+  .navegador-superior{
+    color: #fff;
+    background-color: black;
+    height: 70px;
+  }
+  .navegador-superior > ul > li {
+
+    list-style-type: none;
+    float: right;
+    padding: 3px;
+    font-family: fantasy;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .navegador-superior > ul > li:hover {
+    color: #797e8e;
+    cursor: pointer;
+  }
+  .navegador-superior > ul > a{
+    float: left;
+    margin-left: 10px;
+  }
+
+  .conteudo{
+    margin: 10px;
+    margin-top: 20px;
+  }
+  .postagens{
+    background-color: #797e8e;
+    height: 90%;
+    width: 1000px;
+    margin-left: 13%;
+    padding: 10px;
+    text-align: justify;
+  }
+  h1:hover, h2:hover, h3:hover, h4:hover{
+    cursor: pointer;
+    color: #212c3d;
+  }
+  header{
+    text-align: center;
+  }
+  #kbc{
+    padding: 10px;
+    margin-bottom: -76px;
+  }
+
+
+  footer{
+    background-color: #000;
+    color: #fff;
+    font-family: inherit;
+    margin: 10px;
+  }
+</style>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+    header{
+      width: 100vw;
+      height: 100px;
+      background-color: pink;
+
+    }
+
+    header h3{
+      padding: 10px;
+    }
+    .meni{
+      width: 30%;
+      height: 500px;
+      background-color: pink;
+      float: left;
+    }
+    .acordeon{
+      width: 100%;
+      height: 500px;
+      border: 1px solid gray
+    }
+    .botao{
+      height: 36px;
+      background-color: hotpink;
+      padding: 2px;
+    }
+    .conteudo{
+      height: 440px;
+      background-color: #ccc;
+      padding: 10px 10px;
+    }
+    .meni{
+      border: 1px solid gray;
+      display: none;
+    }
+    .meni ul li{
+      height: 40px;
+    }
+    .meni ul li:first-child{
+      background-color: hotpink;
+    }
+    .botao:hover .meni{
+      display: block;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      padding: 4px;
+    }
+  </style>
+  <body>
+    <header>
+      <h3>Peças Teatrais Online</h3>
+    </header>
+    <div class="meni">
+      <ul>
+        <li>Categorias</li>
+        <li><a href="#">Autores</a></li>
+        <li><a href="#">Movimentos</a></li>
+        <li><a href="#">Escolas</a></li>
+        <li><a href="#">Teatro Nacional</a></li>
+
+      </ul>
+    </div>
+    <div class="acordeon">
+      <div class="botao">
+        <h1>&#9776</h1>
+      </div>
+      <div class="conteudo">
+  				<div class="cont">
+  					<h2>Primeiro</h2>
+  					<p>
+  						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus erat fermentum, volutpat leo id, posuere est. Aliquam tincidunt pulvinar quam, at ornare nulla feugiat facilisis. In mattis lacus quis efficitur interdum. Phasellus euismod tellus lorem, id dapibus ante condimentum sed. Duis mattis urna nulla, vitae iaculis leo lacinia vitae. Phasellus purus dui, maximus id magna at, venenatis dictum tellus. Nam eget sem eget orci tempus vestibulum nec eu justo. Cras ut vehicula metus. Donec iaculis, lorem eu ullamcorper sagittis, dui ante placerat tellus, eget tempor lacus lorem non sem. Morbi eleifend nisl venenatis, tempus ex in, tempor diam. Curabitur nunc purus, lobortis a sapien id, finibus efficitur ex. Sed malesuada augue id venenatis ornare. Fusce cursus cursus consectetur.
+  					</p>
+  				</div>
+  				<div class="cont">
+  					<h2>Segundo</h2>
+  					<p>
+  						Maecenas urna dui, accumsan sit amet turpis eget, sagittis cursus dui. Duis nec ligula mauris. Nulla ligula eros, blandit vel feugiat nec, vulputate tempor magna. Quisque aliquam arcu non nisl pharetra consequat. Curabitur consectetur quam vitae metus ultricies fermentum. Duis eget odio purus. Etiam nec libero eu felis sollicitudin lacinia. Donec sit amet erat nec turpis semper consectetur. Phasellus congue, eros non lobortis ullamcorper, mi nunc pellentesque massa, luctus tempor nisi felis ac quam. In dignissim tortor lorem, ut cursus nulla viverra egestas.
+  					</p>
+  				</div>
+  				<div class="cont">
+  					<h2>Terceiro</h2>
+  					<p>
+  						Mauris blandit, dui eget gravida laoreet, ipsum diam tempor arcu, bibendum porttitor enim purus eget massa. Sed pretium eget elit nec sollicitudin. Vestibulum vulputate dolor nisi, sed faucibus libero luctus ac. Vivamus vitae ornare mauris, et convallis neque. Proin nec lorem pretium erat efficitur gravida. Vestibulum pellentesque laoreet dui at ultrices. Quisque ullamcorper leo vitae neque mattis, ac aliquet massa venenatis. Aenean porttitor eget mauris vel vestibulum. Nullam id magna et massa laoreet auctor. Maecenas non lectus id ex laoreet suscipit. Praesent iaculis ligula neque, sit amet mattis felis finibus vitae.
+  					</p>
+  				</div>
+
+      </div>
+    </div>
+  </body>
+</html>
