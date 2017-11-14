@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #e8e7e5;
+}
+body::after{
+  content: "";
+  background-image: url("f1.png");
+  position: fixed;
+  top: 0;
+  bottom: 75%;
+  right: 0;
+  left: 0;
+  content: " ";
+  z-index: -1;
+}
+.conteudo{
+    width: 900px;
+    margin: auto;
+    box-shadow: 2px 2px 2px gray;
+
+
+}
+.barra-lateral {
+    float: left;
+    list-style-type: none;
+    width:100%;
+    background-color: #f1f1f1;
+    height: 90%;
+    overflow: auto;
+}
+
+.barra-lateral li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.barra-lateral li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.barra-lateral li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.navegador{
+    overflow: hiden;
+    color: white;
+    height: 10vh;
+}
+.navegador>*{
+    background-color: #eaeae8;
+    color: white;
+    float: left;
+
+}
+.login{
+    width: 30%;
+    height: 100%;
+}
+.login>button{
+    float: right;
+    height: 100%;
+    padding: 0 10px;
+    border: 0;
+    background-color: #94c491;
+    box-sizing: border-box;
+}
+.group-name{
+    font-size: 2em;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #94c491;
+}
+.logo{
+    width: 30%;
+    height: 100%;
+}
+.logo img{
+    width: auto;
+    height:90%;
+    padding: 3px;
+}
+
+.mensagem{
+    background-image: url("f2.png");
+    float: left;
+    width: 75%;
+    height:90%;
+    overflow: auto;
+}
+.input-mensagem{
+    float: left;
+    width: 75%;
+    height:10%;
+    overflow: hidden;
+}
+.input-mensagem textarea{
+    float: left;
+    min-width:90%;
+    min-height:100%;
+    max-width:90%;
+    max-height:100%;
+}
+.butao{
+    float: right;
+    position: absolute;
+    top: 91%;
+    margin-left: -70px;
+    width: 5vw;
+    height: 9vh;
+    border: 0;
+    background-color: #cecece;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.avatar-img {
+    width: 24px;
+    height: 24px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.container {
+    height: 90vh;
+    width: 900px;
+}
+.cg{
+  float: right;
+  top: 94%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  margin-left: -45px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #30724e;
+  font: white;
+}
+
+.criarGrupo{
+    height: 10%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    background-color: #94c491;
+    padding-left: 5px;
+}
+.criarGrupo h3{
+    padding-bottom: 5px;
+}
+
+.lateral{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: rgba(0, 150, 0, 0.5);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

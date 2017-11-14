@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Whatsapp</title>
+    <link rel="stylesheet" href="index.css">
+    <meta>
+</head>
+
+<body>
+
+    <div class="conteudo">
+            <header class="navegador">
+                    <div class="logo">
+                        <a href=""><img src="loogo.png"></a>
+                    </div>
+                    <div class="group-name" id="nome-amigo"></div>
+                    <div class="login">
+                        <button id="myBtn">Entrar</button>
+                    </div>
+            </header>
+
+            <div class="container">
+              <div class="lateral">
+                  <ul class="barra-lateral" id="amigosList">
+
+                  </ul>
+                  <form class="criarGrupo" action="">
+                      <h3>Novo Grupo</h3>
+                      <input type="text" placeholder="Nome do grupo" id="newGrupo">
+
+                  </form>
+                  <button class="cg" onclick="createGroup()">+</button>
+              </div>
+
+                <div class="mensagem" id="mensagem">
+
+                </div>
+                <form action="" class="input-mensagem">
+                    <textarea name="message" id="msg"></textarea>
+
+                </form>
+                <button class="butao" onclick="sendMsg()">Enviar</button>
+            </div>
+    </div>
+
+
+
+    <div id="myModal" class="modal">
+
+        
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>LOGIN</p>
+            <input type="text" placeholder="digite seu id" id="user">
+            <button onclick="login()">Login</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
