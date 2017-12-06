@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen" title="no title">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+</head>
+
+<body onload="RestoreToCart()">
+
+<nav class="navbar-fixed-top navbar-inverse container">
+
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img alt="Brand" src="img/gg.png"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li id="entrar" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> ENTRAR <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <form id="formEntrar" class="myForm">
+                <div class="form-group">
+                  <label for="InputName-02">Nome</label>
+                  <input type="text" class="form-control" id="InputName-02" placeholder="Nome de usuário">
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword-02">Senha</label>
+                  <input type="password" class="form-control" id="InputPassword-02" placeholder="Senha">
+                </div>
+                <button type="button" class="btn btn-block myButton entrar">Entrar</button>
+              </form>
+            </li>
+          </ul>
+        </li>
+
+        <li id="cadastrar" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> CADASTRAR <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <form id="formCadastrar" class="myForm">
+                <div class="form-group">
+                  <label for="InputEmail-01">Email</label>
+                  <input type="email" name="email" class="form-control" id="InputEmail-01" placeholder="Endereço de email">
+                </div>
+                <div class="form-group">
+                  <label for="InputName-01">Nome</label>
+                  <input type="text" name="nome" class="form-control" id="InputName-01" placeholder="Nome de usuário">
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword-01">Senha</label>
+                  <input type="password" name="senha" class="form-control" id="InputPassword-01" placeholder="Senha">
+                </div>
+
+                <button type="button" class="btn btn-block myButton cadastrar">Cadastrar</button>
+              </form>
+            </li>
+          </ul>
+        </li>
+
+        <li id="carrinho" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> CARRINHO <span class="caret"></span> <span id="num_produtos" class="badge"> 0 </span> </a>
+          <ul class="dropdown-menu myList">
+            <li class="empety_cart" >Ainda não tem nada aqui.</li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <a href="html/compras.html">
+                <button id="finalizar" class="btn btn-block myButton" type="button" disabled="disabled">Finalizar</button>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a id="exit" href="index.html">QUITAR</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container grade">
+  <div class="jumbotron">
+
+    <img src="img/gamergrl.png" alt="">
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption"></div>
+        <img src="img/gamer/img2.jpg" alt="...">
+        <div class="caption">
+          <h4 class="nome">Mouse Pro Player</h4>
+          <p>
+            Mouse mais rápido da historia da humanidade pra dar só Headshot.
+          </p>
+          <h4 class="price">Preço: R$<strong>89.90</strong></h4>
+          <div class="input-group qtd" >
+            <select class="form-control" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn myButton" type="button" disabled >Já quero <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption"></div>
+        <img src="img/gamer/img3.jpg" alt="...">
+        <div class="caption">
+          <h4 class="nome">	Headphone da Ahri</h4>
+          <p>
+            Se você é mesmo uma gatinha gamer precisa desses fones pra ficar na call.
+          </p>
+          <h4 class="price">Preço: R$<strong>139.90</strong></h4>
+          <div class="input-group qtd" >
+            <select class="form-control" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn myButton" type="button" disabled >Já quero <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption"></div>
+        <img src="img/gamer/img1.jpg" alt="...">
+        <div class="caption">
+          <h4 class="nome">Poltrona Challenger</h4>
+          <p>
+            Cadeira ideal para virar a noite jogando. É mais confortável que sua cama.
+          </p>
+          <h4 class="price">Preço: R$<strong>699.00</strong></h4>
+          <div class="input-group qtd" >
+            <select class="form-control" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn myButton" type="button" disabled >Já quero <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption"></div>
+        <img src="img/gamer/img6.jpg" alt="...">
+        <div class="caption">
+          <h4 class="nome">Teclado Rainbow</h4>
+          <p>
+            Com esse teclado mecânico não tem como ser noob. Compre e chame pro x1.
+          </p>
+          <h4 class="price">Preço: R$<strong>299.90</strong></h4>
+          <div class="input-group qtd" >
+            <select class="form-control" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn myButton" type="button" disabled >Já quero <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption"></div>
+        <img src="img/gamer/img8.png" alt="...">
+        <div class="caption">
+          <h4 class="nome">	Suporte para Note</h4>
+          <p>
+            Jogar deitada faz mal pras costas, viu? A não ser que seja nesse suporte.
+          </p>
+          <h4 class="price">Preço: R$<strong>59.00</strong></h4>
+          <div class="input-group qtd" >
+            <select class="form-control" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn myButton" type="button" disabled >Já quero <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption"></div>
+        <img src="img/gamer/img16.png" alt="...">
+        <div class="caption">
+          <h4 class="nome">	Mousepad Good Trip</h4>
+          <p>
+            Porque um mousepad pode ser bom e bonito ao mesmo tempo SIM!
+          </p>
+          <h4 class="price">Preço: R$<strong>29.90</strong></h4>
+          <div class="input-group qtd" >
+            <select class="form-control" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn myButton" type="button" disabled >Já quero <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption"></div>
+        <img src="img/gamer/img14.jpg" alt="...">
+        <div class="caption">
+          <h4 class="nome">Caixinha de som Multi</h4>
+          <p>
+            Não se engane pelo tamanho, com essas caixinhas você poderia dar uma festa.
+          </p>
+          <h4 class="price">Preço: R$<strong>39.90</strong></h4>
+          <div class="input-group qtd" >
+            <select class="form-control" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn myButton" type="button" disabled >Já quero <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <div class="caption"></div>
+        <img src="img/gamer/img11.jpg" alt="...">
+        <div class="caption">
+          <h4 class="nome">Webcam Subscribe</h4>
+          <p>
+            Pras minas que curtem Streamar, essa cam te deixa mais bonita do que você é.
+          </p>
+          <h4 class="price">Preço: R$<strong>69.90</strong></h4>
+          <div class="input-group qtd" >
+            <select class="form-control" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn myButton" type="button" disabled >Já quero <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+<div class="container footer ">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <address>
+        <strong>
+          Contato:
+        </strong>
+        <p>gamergrl@gmail.com </br>
+        Shopping Rio Mar Kennedy, <br> Segunda a Sábado, 10h às 22h</p>
+      </address>
+    </div>
+    <div class="col-md-5">
+      <strong>
+        Aceitamos os cartões:
+      </strong>
+      <br>
+      <br>
+      <img src="img/cartao.png" alt="">
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+
+<script src="jquery/jquery-3.1.1.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/global.js"></script>
+</body>
+
+</html>

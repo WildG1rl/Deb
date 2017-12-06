@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GG</title>
+      <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" media="screen" title="no title">
+      <link rel="stylesheet" type="text/css" href="../css/master.css">
+  </head>
+
+  <body onload="showInCart(), showHistorico()">
+
+    <nav class="navbar-fixed-top navbar-inverse container">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html"><img alt="Brand" src="../img/gg.png"></a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+          <ul class="nav navbar-nav navbar-right">
+
+            <li id="entrar" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> ENTRAR <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <form id="formEntrar" class="myForm">
+                    <div class="form-group">
+                      <label for="InputName-02">Nome</label>
+                      <input type="text" class="form-control" id="InputName-02" placeholder="Nome de usuário">
+                    </div>
+                    <div class="form-group">
+                      <label for="InputPassword-02">Senha</label>
+                      <input type="password" class="form-control" id="InputPassword-02" placeholder="Senha">
+                    </div>
+                    <button type="button" class="btn btn-block myButton entrar">Entrar</button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+
+            <li id="cadastrar" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> CADASTRAR <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <form id="formCadastrar" class="myForm">
+                    <div class="form-group">
+                      <label for="InputEmail-01">Email</label>
+                      <input type="email" name="email" class="form-control" id="InputEmail-01" placeholder="Endereço de email">
+                    </div>
+                    <div class="form-group">
+                      <label for="InputName-01">Nome</label>
+                      <input type="text" name="nome" class="form-control" id="InputName-01" placeholder="Nome de usuário">
+                    </div>
+                    <div class="form-group">
+                      <label for="InputPassword-01">Senha</label>
+                      <input type="password" name="senha" class="form-control" id="InputPassword-01" placeholder="Senha">
+                    </div>
+
+                    <button type="button" class="btn btn-block myButton cadastrar">Cadastrar</button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+
+            <li><a id="exit" href="../index.html">SAIR</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container grade">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Carrinho</h3>
+            </div>
+
+            <ul class="list-group carrinho">
+              <div id="empety_cart" class="panel-body vazio">
+                Ainda não tem nada aqui.
+              </div>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-body total">
+                  <h5 class="pull-left">Valor Total: R$ <strong>00,00</strong></h5>
+                  <button id="finalizarCompra" class="btn myButton pull-right" type="button">Finalizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Historico</h3>
+            </div>
+
+            <ul class="list-group historico">
+              <div id="empety_hist" class="panel-body">
+                Nunca nem vi.
+              </div>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="container footer ">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <address>
+            <strong>
+              Contato:
+            </strong>
+            <p>gamergrl@gmail.com </br>
+            Shopping Rio Mar Kennedy, <br> Segunda a Sábado, 10h às 22h</p>
+          </address>
+        </div>
+        <div class="col-md-5">
+          <strong>
+            Aceitamos os cartões:
+          </strong>
+          <br>
+          <br>
+          <img src="cartao.png" alt="">
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <script src="../jquery/jquery-3.1.1.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/global.js"></script>
+  </body>
+</html>

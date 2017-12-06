@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+}
+body{
+  background-image: url("../img/bg.png");
+
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+
+}
+
+.navbar-fixed-top{
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  background-color: #111959;
+
+}
+
+
+.navbar-brand>img{
+  height: 40px;
+  width: 40px;
+  padding-bottom: 15px;
+}
+
+.grade{
+  background-color: #dce9ef;
+  min-height: 100vh;
+  padding: 75px 0px 15px 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+}
+
+.jumbotron{
+  background-color: #f78fd0;
+}
+.jumbotron img{
+  width: 100%;
+}
+
+.item img{
+  height: 60%;
+}
+
+.myForm, .myList{
+  padding: 15px;
+  min-width: 250px;
+}
+
+.myList li{
+  margin: 10px 0px;
+}
+
+.myList li a{
+  padding: 0px 0px;
+}
+
+.price{
+  color: green;
+}
+
+.myButton, .myButton:hover, .myButton:focus, .myButton:visited{
+  background-color: #4e68f0;
+  color: white;
+}
+.myButton:active{
+  background-color: #3c4fb4;
+  color: white;
+}
+
+.carrinho{
+  height: 532px;
+  overflow: auto;
+}
+.historico{
+  height: 620px;
+  overflow: auto;
+}
+
+.footer{
+  width: auto;
+  height:auto;
+  background-color: #7582f4;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  padding-top: 15px;
+}
+
+.footer img{
+  width: 230px;
+  height: 50px;
+}
+
+
+
+#exit{
+  color: red;
+}
+
+.carrinho .badge{
+  background-color: #4e68f0;
+}
+
+#num_produtos{
+  background-color: #4e68f0;
+  margin-left: 10px;
+  display: none;
+}
+
+.thumbnail img{
+  height: 200px;
+}
+.thumbnail p{
+  height: 60px;
+  overflow: hidden;
+}
+
+.price{
+  color: purple;
+}
